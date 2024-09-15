@@ -14,7 +14,7 @@ build-multiarch:
 	docker buildx build \
 		--platform linux/amd64,linux/arm64,linux/arm/v7 \
 		--secret id=secret.txt,src=local-secret.txt \
-		-t sidpalas/multi-arch-test:latest \
+		-t ishehroz/multi-arch-test:latest \
 		-f Dockerfile.sample \
 		--push \
 		.

@@ -23,7 +23,6 @@ DOCKERFILE_DIR:=../06-building-container-images/
 
 .PHONY: docker-build-all
 docker-build-all:
-	docker build -t client-react-vite -f ${DOCKERFILE_DIR}/client-react/Dockerfile.3 ${DOCKERCONTEXT_DIR}/client-react/
 
 	docker build -t client-react-ngnix -f ${DOCKERFILE_DIR}/client-react/Dockerfile.5 ${DOCKERCONTEXT_DIR}/client-react/
 
